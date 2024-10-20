@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Demonstrates some basic HTML content elements and CSS"
+    />
+    <meta name="keywords" content="HTML5 and CSS3" />
+    <meta name="author" content="Aastha Shrestha" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- fontstyling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400&family=Poppins:ital,wght@0,200;0,400;0,500;1,200;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Enhancements</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Icon taken from https://bajratechnologies.com/ -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <section>
+          <ul>
+            <li>
+              <a href="./index.html"
+                ><img id="logo" src="./images/logo.png" alt=""
+              /></a>
+              <!-- Logo taken from https://bajratechnologies.com/ -->
+            </li>
+            <li><a href="./jobs.html">Jobs</a></li>
+            <li><a href="./apply.html">Apply</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./enhancements.html">Enhancements</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <article>
+      <h1>Enhancements</h1>
+      <ol>
+        <li>
+          <h2>Enhancement 1: HTML details and summary elements</h2>
+          <section>
+            <h3>
+              How it goes how it goes beyond the basic requirements of the
+              assignment?
+            </h3>
+            <p>
+              The HTML summary and details elements were not taught in this
+              unit; it was learnt through self-research.
+            </p>
+            <h3>What code is needed to implement the feature?</h3>
+            <p>
+              It can be implemented by enclosing the caption for the hidden
+              content within the summary element and enclosing the content to be
+              hidden in the details element. The summary tag must be enclosed
+              within the details element. The code to implement this feature is
+              provided below:
+            </p>
+            <pre><code>
+            &lt;details&gt;
+                &lt;summary&gt;
+                    &lt;h3&gt;Caption&lt;/h3&gt;
+                &lt;/summary&gt;
+                &lt;p&gt;Content to be hidden&lt;/p&gt;
+            &lt;/details&gt;</code>
+        </pre>
+            <h3>
+              References to any third party sources for the technique, (e.g.
+              URL)
+            </h3>
+            <p>
+              The MDN Web Docs references for
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"
+                >the Details disclosure element</a
+              >
+              and
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"
+                >the disclosure summary element</a
+              >
+              were referenced to implement this enhancement.
+            </p>
+            <h3>
+              Hyperlink to where the enhancement has been implemented in the
+              website
+            </h3>
+            <p>
+              The details and summary elements have been used in
+              <a href="./jobs.html">the Jobs page</a> to toggle the visibility
+              of information relating to key responsibilities, required and
+              preferred skills.
+            </p>
+          </section>
+        </li>
+        <li>
+          <h2>
+            Enhancement 2: Implementing tabs with the use of the element +
+            element CSS Selectors
+          </h2>
+          <section>
+            <h3>
+              How it goes how it goes beyond the basic requirements of the
+              assignment?
+            </h3>
+            <p>
+              The use of CSS selectors were briefly discussed and implemented
+              during the tutorials, however, the use of adjacent sibling
+              combinator for creating tabs were not taught in this unit.
+            </p>
+            <h3>What code is needed to implement the feature?</h3>
+            <p>
+              It can be implemented by controlling the visibility of each
+              content through the use of radio buttons, adjacent sibling
+              combinators and the display property. Based on the radio button
+              that is clicked, the content located below the radio button in the
+              HTML file is shown. The CSS code to implement this feature is provided
+              below:
+            </p>
+            .tabradio { display: none; }
+            <br />
+            .tabcontent { order: 1; width: 100%; border-bottom: 3px solid
+            #dddddd; line-height: 1.5; display: none; font-size: 0.9em; }
+            <br />
+            .tabradio:checked + .tablabel + .tabcontent { display: initial; }
+            <h3>
+              References to any third party sources for the technique, (e.g.
+              URL)
+            </h3>
+            <p>
+              The code snippets on
+              <a href="https://codepen.io/dcode-software/pen/NWpZjNB"
+                >CodePen</a
+              >
+              were referenced to implement this enhancement.
+            </p>
+            <h3>
+              Hyperlink to where the enhancement has been implemented in the
+              website
+            </h3>
+            <p>
+              The tabs have been implemented in
+              <a href="./about.html">the About page</a> to present my personal
+              interests and professional experience.
+            </p>
+          </section>
+        </li>
+      </ol>
+    </article>
+    <footer>
+      <section>
+        <p>
+          Reach out to us on:
+          <a href="mailto:104853758@student.swin.edu.au"
+            ><img
+              src="./images/mail.png"
+              alt="Mail Icon"
+              class="socials"
+              id="mail"
+          /></a>
+          <a href=""
+            ><img
+              src="./images/linkedin.png"
+              alt="LinkedIn Icon"
+              class="socials"
+          /></a>
+          <a href=""
+            ><img src="./images/twitter.png" alt="Twitter Icon" class="socials"
+          /></a>
+          <a href=""
+            ><img
+              src="./images/facebook.png"
+              alt="Facebook Icon"
+              class="socials"
+          /></a>
+        </p>
+        <p id="copyright">
+          &#x24B8; Copyright 2023
+          <span><a href="index.html">Bajra Technologies</a></span> | All Rights
+          Reserved.
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

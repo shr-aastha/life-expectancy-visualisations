@@ -1,0 +1,316 @@
+/*
+filename: style.css
+author: Aastha Shrestha
+created: 25/08/2023
+last modified: 29/08/2023
+description: CSS stylesheet for index.html, jobs.html, apply.html, about.html and enhancements.html
+*/
+
+/* setting the font-family of all elements to Poppins */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* providing background to the body along with margin, padding, minheight and max-width */
+body {
+    background-image: url('./images/cool-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+/* specifying the weight of the strong element */
+strong {
+    font-weight: 500;
+}
+
+/* setting the font weight, size and family of the h1 element */
+h1 {
+    font: 300 30px 'Bricolage Grotesque', sans-serif;
+}
+
+/* setting the font weight, size and family of the h2 element */
+h2 {
+    font: 300 26px 'Bricolage Grotesque', sans-serif;
+}
+
+/* setting the font weight, size and family of the h3 element */
+h3 {
+    font: 300 22px 'Bricolage Grotesque', sans-serif;
+}
+
+/* styling the first letter of the h1 elements */
+h1::first-letter {
+    font-size: xx-large;
+    color: #BE273A;
+}
+
+/* specifying the width, margin, horizontal alignment and padding-top of the article element */
+article {
+    width: 80%; 
+    margin: auto;
+    text-align: justify; 
+    padding-top: 3em;
+}
+
+/* specifying the position and width of the header element */
+header {
+    position: fixed;
+    width: 100%; top: 0;
+}
+
+/* adjusting the width of the logo image in the navigation bar*/
+#logo {
+    width: 3.5em;
+}
+
+/* adjustin the height and width, and specifying the padding-top of the graphic in the index page */
+#office {
+    width: 100%;
+    height: auto;
+    padding-top: 3em;
+}
+
+/* giving padding and background-color to the navigation bar */
+nav {
+    padding: 0.75em 0;
+    background-color:#EAC6D0;
+}
+
+/* specifying the max-width and margin of the section element nested inside the nav element */
+nav section {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* setting the list-style, margin, padding and display of the unordered list used in the navigation bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* setting the margin-right for each of the list items in the navigation bar's unordered list */
+nav li {
+    margin-right: 20px;
+}
+
+/* specifying the text decoration style, color and font size of the anchor elements within the navigation bar */
+nav li a {
+    text-decoration: none;
+    color: #BE273A;
+    font-size: 1em;
+}
+
+/* specifying the color and text decoration style to be applied to the anchor element when it is being hovered on */
+nav li a:hover {
+    color: #88001d; 
+    text-decoration: underline;
+}
+
+/* specifying the color and text decoration style to be applied to the anchor element when it is in active state */
+nav li a:active {
+    font-weight: bold;
+} 
+
+/* setting the width of the fieldset element */
+fieldset {
+    width: fit-content;
+}
+
+/* styling the aside element by adjusting its width, floating it to the right and specifying the padding, margin, border style and color, background color and color properties*/
+aside {
+    width: 25%;
+    float: right;
+    padding: 15px;
+    margin: 15px;
+    border-style: solid;
+    border-color: #BE273A;
+    background-color: black;
+    color: #BE273A;
+  }
+
+/* specifying the width and adding border to the author's image and also floating it to the right */
+figure img {
+    width:185px;
+    border: 2px solid black;
+    float: right;
+}
+
+/* assigning max-width of the form to be 100% */
+form {
+    max-width: 100%;
+}
+
+/* setting padding to the definition list element */
+dl {
+    padding: 0.5em;
+}
+
+/* styling the description term element */
+dt {
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: left;
+    font-weight: bold;
+    color: #BE273A;
+}
+
+/* adding a ':' after the description term element */
+dt::after {
+    content: ":";
+}
+
+/* specifying the margin-left of the dd element */
+dd{
+    margin-left: 25px;
+}
+
+/* styling the tabs class */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+/* specifying the padding for the tablabel class */
+  .tablabel {
+    padding: 5px 5px;
+  }
+
+/* specifying the style of the tablabel class when it is hovered on */  
+  .tablabel:hover{
+    color: #FFF;
+    background: #BE273A;
+    transition: all ease-in-out 0.3s;
+    border-radius: 5px;
+}
+
+/* setting the display of tabradio class to none */
+.tabradio {
+    display: none;
+}
+  
+/* styling the tabcontent cladd */
+.tabcontent {
+    order: 1;
+    width: 100%;
+    border-bottom: 3px solid #dddddd;
+    line-height: 1.5;
+    display: none;
+    font-size: 0.9em;
+}
+
+/* styling the element when the tabradio is clicked on */
+  .tabradio:checked + .tablabel {
+    color: #BE273A;
+    border-bottom: 1px solid #BE273A;
+  }
+
+/* specifying the action to be performed when the tabradio is clicked on */
+  .tabradio:checked + .tablabel + .tabcontent {
+    display: initial;
+  }
+
+
+/* styling the table caption */
+caption {
+    font: 300 22px 'Bricolage Grotesque', sans-serif;
+}
+
+/* adding border and padding to the table, th and td elements */
+table, th, td {
+    border: 1px solid pink;
+    border-collapse: collapse;
+    padding: 0.35em;
+    clear: both;
+    
+}
+
+/* setting the table's layout */
+table {
+    table-layout: fixed;
+}
+
+/* setting the font weight of the th elements to bold */
+th {
+    font-weight: bold;
+}
+
+/* specifying the colof the th elements and  */
+th, td:first-child {
+    width: 5%;
+    background-color: #C0C0C0;
+}
+
+/* setting the font-size, width and background color of the table data elements */
+td {
+    font-size: 14px;
+    width: 15%;
+    background-color:#DCDCDC;
+}
+
+/* styling the table cells to color code the classes by units */
+.osmanagement {
+    background-color: #7FFFD4;
+}
+
+.tip {
+    background-color: #F5DEB3;
+}
+
+.webapp {
+    background-color: #FFA07A;
+}
+
+.networks {
+    background-color: #D8BFD8;
+}
+
+/* specifying the widths and margins of the social media icons in the footer */
+.socials {
+    width: 2.05em;
+    margin-top: 5px;
+    margin-right: 4px;
+}
+
+/* specifying the width of the mail logo in the footer */
+#mail {
+    width: 2em;
+}
+
+/* styling the footer element */
+footer {
+    align-items: center;
+    background-color: #EAC6D0;
+    height: 90px;
+}
+
+/* aligning and setting the size of the text in the section element nested within the footer element */
+footer section {
+    text-align: center;
+    font-size: small;
+}
+
+/* adding margin to the p tag containing the copyright information */
+#copyright {
+    margin-top: -10px;
+}
+
+/* specifying the cursor type and padding for the summary element within the details element */
+details > summary {
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+}
+
+/* styling the elements in the references class */
+.references {
+    font-size: 0.85em;
+}
+
+
+
