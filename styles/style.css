@@ -10,7 +10,7 @@ author: Aastha Shrestha
 
 /* providing background to the body along with margin, padding, minheight and max-width */
 body {
-    background-image: url('./images/cool-background.svg');
+    /* background-image: url('./images/cool-background.svg'); */
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -64,12 +64,6 @@ header {
     width: 3.5em;
 }
 
-/* adjustin the height and width, and specifying the padding-top of the graphic in the index page */
-#office {
-    width: 100%;
-    height: auto;
-    padding-top: 3em;
-}
 
 /* giving padding and background-color to the navigation bar */
 nav {
@@ -131,17 +125,6 @@ aside {
     color: #BE273A;
   }
 
-/* specifying the width and adding border to the author's image and also floating it to the right */
-figure img {
-    width:185px;
-    border: 2px solid black;
-    float: right;
-}
-
-/* assigning max-width of the form to be 100% */
-form {
-    max-width: 100%;
-}
 
 /* setting padding to the definition list element */
 dl {
@@ -168,112 +151,11 @@ dd{
     margin-left: 25px;
 }
 
-/* styling the tabs class */
-.tabs {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-/* specifying the padding for the tablabel class */
-  .tablabel {
-    padding: 5px 5px;
-  }
-
-/* specifying the style of the tablabel class when it is hovered on */  
-  .tablabel:hover{
-    color: #FFF;
-    background: #BE273A;
-    transition: all ease-in-out 0.3s;
-    border-radius: 5px;
-}
-
-/* setting the display of tabradio class to none */
-.tabradio {
-    display: none;
-}
-  
-/* styling the tabcontent cladd */
-.tabcontent {
-    order: 1;
-    width: 100%;
-    border-bottom: 3px solid #dddddd;
-    line-height: 1.5;
-    display: none;
-    font-size: 0.9em;
-}
-
-/* styling the element when the tabradio is clicked on */
-  .tabradio:checked + .tablabel {
-    color: #BE273A;
-    border-bottom: 1px solid #BE273A;
-  }
-
-/* specifying the action to be performed when the tabradio is clicked on */
-  .tabradio:checked + .tablabel + .tabcontent {
-    display: initial;
-  }
-
-
 /* styling the table caption */
 caption {
     font: 300 22px 'Bricolage Grotesque', sans-serif;
 }
 
-/* adding border and padding to the table, th and td elements */
-table, th, td {
-    border: 1px solid pink;
-    border-collapse: collapse;
-    padding: 0.35em;
-    clear: both;
-    
-}
-
-/* setting the table's layout */
-table {
-    table-layout: fixed;
-}
-
-/* setting the font weight of the th elements to bold */
-th {
-    font-weight: bold;
-}
-
-/* specifying the colof the th elements and  */
-th, td:first-child {
-    width: 5%;
-    background-color: #C0C0C0;
-}
-
-/* setting the font-size, width and background color of the table data elements */
-td {
-    font-size: 14px;
-    width: 15%;
-    background-color:#DCDCDC;
-}
-
-/* styling the table cells to color code the classes by units */
-.osmanagement {
-    background-color: #7FFFD4;
-}
-
-.tip {
-    background-color: #F5DEB3;
-}
-
-.webapp {
-    background-color: #FFA07A;
-}
-
-.networks {
-    background-color: #D8BFD8;
-}
-
-/* specifying the widths and margins of the social media icons in the footer */
-.socials {
-    width: 2.05em;
-    margin-top: 5px;
-    margin-right: 4px;
-}
 
 /* specifying the width of the mail logo in the footer */
 #mail {
@@ -285,6 +167,9 @@ footer {
     align-items: center;
     background-color: #EAC6D0;
     height: 75px;
+
+    bottom: 0;
+    width: 100%;
 }
 
 /* aligning and setting the size of the text in the section element nested within the footer element */
@@ -304,10 +189,6 @@ details > summary {
     padding: 0.5rem 0.5rem;
 }
 
-/* styling the elements in the references class */
-.references {
-    font-size: 0.85em;
-}
 
 
 
